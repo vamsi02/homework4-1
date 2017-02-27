@@ -35,15 +35,13 @@ $statement->closeCursor();
 	 <tr>
 	      <td><?php echo $category['categoryName'];?></td>
 	      <td><form action='delete_category.php' method='post'>
-	      	<input type='hidden' name='category_name' value='<?php echo $category['categoryName']; ?>'>
-		<input type ="submit" value = 'delete'> </form> </td>
+	      <input type='hidden' name='category_name' value='<?php echo $category['categoryName']; ?>'> 
+	      <input type ="submit" value ="delete"> </form> </td>
 	 </tr>
 	<?php
 	} 
 	?>
-
-        <!-- add code for the rest of the table here -->
-    
+      
     </table>
 
     <h2>Add Category</h2>
